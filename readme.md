@@ -1,0 +1,2 @@
+O código de front foi feito pela Stephani Santos e Sabrina Nicole Bela, o código de back foi feito por Enzo Móbile de Oliveira.
+A funcionalidade é de enviar uma nota e (opcional) um comentário para uma tabela, onde se tem a avaliação do site. O nome e email vão ser passados para a tabela através da session, já que a avaliação só pode ser feita logado.
