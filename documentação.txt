@@ -1,0 +1,13 @@
+Código feito por Enzo Móbile de Oliveira, Stephani Santos e Sabrina Nicole Bela. Turma 3°F
+Arquivo escrito por Enzo Móbile de Oliveira
+Enzo Móbile de Oliveira -> Back (todo), Front.
+Stephani Santos e Sabrina Nicole -> index.php e style.css
+
+A função desse arquivo é implementar o feedback no site, para isso foi necessário a criação de cadastro e login para fim de testes.
+Os arquivos principais são index.php e enviar_feedback.php, responsáveis pelas funções.
+
+Para fazer um comentário, o usuário precisa estar logado com sua conta, que tem id, nome e email.
+Na tela de comentário você tem a opção de nota e texto, nota é obrigatório e texto é opcional.
+Ao inserir uma nota e apertar o botão de envio, enviar_feedback.php faz verificações dos dados.
+Verifica se está logado, se já enviou uma nota/comentário, etc.
+Quando ocorre sucesso ou erro, o usuário recebe um aviso com texto personalizado alert().

@@ -1,14 +1,25 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['nome']) || !isset($_SESSION['email'])) {
+      echo "<script>
+        alert('Você não está logado.');
+        window.location.replace('../Front/login.php');
+      </script>";
+      exit();
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Formulário de Feedback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bem vindo(a), <?= $_SESSION['nome']?></title>
 </head>
 <body>
   <div class="feedback-form">
     <h2>Envie seu Feedback</h2>
+
     <form id="form" action="../Back/enviar_feedback.php" method="POST">
       <label for="nota">Avaliação:</label>
       <select id="nota" name="nota" required>
